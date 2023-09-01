@@ -1,6 +1,7 @@
 export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+	plugins: {
+		tailwindcss: {},
+		"postcss-normalize": {}, // 在這裡新增 postcss-normalize
+		autoprefixer: {},
+	},
+};
