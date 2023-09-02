@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
 	return (
 		<Router>
-			<div>
+			<div className="w-full ">
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />} />
