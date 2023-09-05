@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import Icon from "../UI/Icon";
 const menuItems = [
-	{ key: "1", label: "首頁" },
-	{ key: "2", label: "關於" },
-	{ key: "3", label: "頁面" },
-	{ key: "4", label: "商店" },
-	{ key: "5", label: "產品" },
-	{ key: "6", label: "新知" },
+	{ key: "1", label: "Home" },
+	{ key: "2", label: "About" },
+	{ key: "3", label: "Pages" },
+	{ key: "4", label: "Shop" },
+	{ key: "5", label: "Product" },
+	{ key: "6", label: "News" },
 ];
 
 const Navbar = () => {
@@ -18,9 +19,11 @@ const Navbar = () => {
 				</div>
 			</div>
 			<ul className="flex items-center gap-10 mx-36">
-				{menuItems.map((item) => (
+				{menuItems.map((item, index) => (
 					<li className="cursor-pointer " key={item.key}>
-						{item.label}
+						<Link to={item.key === "1" ? "/" : `/${item.label.toLowerCase()}`}>
+							{item.label}
+						</Link>
 					</li>
 				))}
 			</ul>
@@ -30,13 +33,15 @@ const Navbar = () => {
 					placeholder="輸入搜索內容"
 				/>
 				<Icon
-					className="absolute right-0 transform -translate-y-1/2 top-1/2"
-					name="search"
-					theme="secondary"
+					className="absolute right-0 transform -translate-y-1/2 top-1/2 bg-secondary text-[5px] text-white  w-[1.4vw] h-[1.4vw] "
+					name="magnify"
 				></Icon>
 			</div>
 			<div className="flex items-center border border-1 rounded-[66px] h-8 px-2">
-				<Icon name="shopping_cart" theme="primary"></Icon>
+				<Icon
+					name="cart"
+					className=" bg-primary  w-[1.4vw] h-[1.4vw] text-[5px] text-white"
+				></Icon>
 
 				<span className="ml-2">cart(0)</span>
 			</div>

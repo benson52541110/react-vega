@@ -1,5 +1,6 @@
 import Button from "../UI/Button";
 import Product from "./Products";
+import Footer from "./Footer";
 
 const Home = () => {
 	return (
@@ -98,13 +99,164 @@ const Home = () => {
 					<Button className="text-white bg-primary">Shop Now</Button>
 				</div>
 			</div>
-			<div className=" h-[1750px] w-full flex flex-col py-[180px] items-center">
+			<div className=" h-[1750px] w-full flex flex-col py-[180px] px-[260px] items-center">
 				<p className="text-4xl text-secondary font-yellowtail">Categories</p>
 				<p className="mt-2 text-5xl font-extrabold text-primary">
 					Our Products
 				</p>
 				<Product className="mt-10"></Product>
+				<Button className="mt-32 font-bold text-white bg-primary">
+					Load More
+				</Button>
 			</div>
+			<div
+				className="h-[1267px] py-40 px-[406px] flex flex-col items-center"
+				style={{
+					backgroundImage: `url("/assets/images/Testimonial.jpg")`,
+				}}
+			>
+				<p className="text-4xl text-secondary font-yellowtail">Testimonial</p>
+				<p className="mt-2 text-5xl font-extrabold text-primary">
+					What Out Customer Saying
+				</p>
+				<img
+					src="/assets/images/Customer.jpg"
+					alt="customer"
+					className="w-[125px] h-[125px] rounded-full mt-10"
+				/>
+				<p className=" max-w-[780px] mt-16 text-center">
+					The service was exceptional, and the product quality exceeded all my
+					expectations. Highly recommend! User-friendly interface and fast
+					shipping made my experience fantastic. Will definitely shop here
+					again.
+				</p>
+				<p>Sara Taylor</p>
+				<hr className="w-full my-24 border-t border-gray-200" />
+				<div className="flex justify-between w-full gap-16 px-10">
+					<div className="flex flex-col items-center justify-center p-16 border rounded-full border-secondary aspect-square bg-gray-regular">
+						<p className="text-4xl font-extrabold text-primary">100%</p>
+						<p className="text-lg font-normal text-primary whitespace-nowrap">
+							Organic
+						</p>
+					</div>
+					<div className="flex flex-col items-center justify-center p-16 border rounded-full border-secondary aspect-square bg-gray-regular">
+						<p className="text-4xl font-extrabold text-primary">285</p>
+						<p className="text-lg font-normal text-primary whitespace-nowrap">
+							Active Product
+						</p>
+					</div>
+					<div className="flex flex-col items-center justify-center p-16 border rounded-full border-secondary aspect-square bg-gray-regular">
+						<p className="text-4xl font-extrabold text-primary">350+</p>
+						<p className="text-lg font-normal text-primary whitespace-nowrap">
+							Organic Orchads
+						</p>
+					</div>
+					<div className="flex flex-col items-center justify-center p-16 border rounded-full border-secondary aspect-square bg-gray-regular">
+						<p className="text-4xl font-extrabold text-primary">25+</p>
+						<p className="text-lg font-normal text-primary whitespace-nowrap">
+							Years of Farming
+						</p>
+					</div>
+				</div>
+			</div>
+			<div className="h-[1050px] py-52 px-64 bg-primary w-full flex items-center">
+				<div className="flex flex-col w-full">
+					<div className="flex justify-between w-full">
+						<div>
+							<p className="text-4xl text-secondary font-yellowtail">Offer</p>
+							<p className="mt-2 text-5xl font-extrabold text-white">
+								We Offer Organic Fro You
+							</p>
+						</div>
+						<div>
+							<Button className=" bg-regular">View All Product</Button>
+						</div>
+					</div>
+					<Product className="mt-10"></Product>
+				</div>
+			</div>
+			<div className="h-[931px] w-full flex items-center ">
+				<div
+					className="flex-1 w-full h-[931px] bg-cover bg-center"
+					style={{ backgroundImage: `url("/assets/images/Econ friendly.jpg")` }}
+				></div>
+				<div className="flex-1 w-[635px] ">
+					<div className="flex flex-col transform translate-x-[-90px] bg-white py-[78px] px-[90px] rounded-[30px]">
+						<p className="text-4xl text-secondary font-yellowtail">
+							Eco Friendly
+						</p>
+						<p className="text-5xl font-extrabold text-primary">
+							Econis is Friendly Organic Store
+						</p>
+						<div className="flex flex-col gap-9 ">
+							<div className="flex flex-col">
+								<p className="text-2xl font-medium text-primary">
+									Start with Our Company First
+								</p>
+								<p className="font-light">
+									Our Company First transformed our operations and took our
+									efficiency to the next level. Highly recommend!
+								</p>
+							</div>
+							<div className="flex flex-col">
+								<p className="text-2xl font-medium text-primary">
+									Learn How to Grow yourself
+								</p>
+								<p className="font-light">
+									The 'Learn How to Grow Yourself' course gave me the tools to
+									become more confident and effective in both my personal and
+									professional life.
+								</p>
+							</div>
+							<div className="flex flex-col">
+								<p className="text-2xl font-medium text-primary">
+									Farming Strategies og Today
+								</p>
+								<p className="font-light">
+									The modern techniques I learned from Farming Strategies of
+									Today have significantly increased our yield and
+									sustainability.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="h-[931px] w-full flex  bg-secondary-light items-center">
+				<div className="w-full h-[583px] flex  gap-10 justify-between ">
+					<div
+						className="flex items-center justify-center w-full "
+						style={{
+							backgroundImage: `url("/assets/images/Organic Juice.jpg")`,
+						}}
+					>
+						<div className="rounded-[20px] bg-white px-20 py-8 text-center ">
+							Organic Juice
+						</div>
+					</div>
+					<div
+						className="flex items-center justify-center w-full "
+						style={{
+							backgroundImage: `url("/assets/images/Organic Food.jpg")`,
+						}}
+					>
+						<div className="rounded-[20px] bg-white px-20 py-8 text-center ">
+							Organic Food
+						</div>
+					</div>
+					<div
+						className="flex items-center justify-center w-full "
+						style={{
+							backgroundImage: `url("/assets/images/Nuts Cookies.jpg")`,
+						}}
+					>
+						<div className="px-20 rounded-[20px] bg-white py-8 text-center  ">
+							Nuts Cookies
+						</div>
+					</div>
+				</div>
+			</div>
+			<Footer></Footer>
 		</div>
 	);
 };
